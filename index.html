@@ -20,7 +20,30 @@
     <div id="features">
         
         
+        <!-- Background picker -->
+	<h2>Pick a Kitchen Counter</h2>
+        <input type='radio' name='kitchen' id='white_counter'checked>
+	<label for 'white_counter'>White Counter</label></br>
+			
+	<input type='radio' name='kitchen' id='steel_counter'>
+	<label for 'steel_counter'>Steel Counter</label></br>				
+								
+	<!-- Time type -->
+	<h2>Pick a Produce Timer</h2>
+	<input type='radio' name='produce' id='tomato'checked>
+        <label for 'tomato'>Tomoato</label></br>
+	
+        <input type='radio' name='produce' id='red_apple'>
+        <label for 'red_apple'>Red Apple</label></br>
         
+        <input type='radio' name='produce' id='green_apple'>
+        <label for 'green_apple'>Green Apple</label></br>
+         
+	<input type='radio' name='produce' id='oranges'>
+        <label for 'orange'>Orange</label></br>
+        
+	<input type='radio' name='produce'id='onion'>
+        <label for 'onion'>Onion</label></br>
         
     </div>
     
@@ -29,7 +52,10 @@
     <form id="button">
         <input type='button' value='Play/Pause' onclick='button.Timer.toggle();' />
         <input type='button' value='Stop/Reset' onclick='button.resetCountdown();' />
-        <input type='text' name='startTime' maxlength='2' value='20' style='width:30px;' method="GET"/>Minutes
+        <div id='setTime'>
+            <h2>How much time do you need?</h2>
+            <input type='text' name='startTime' maxlength='2' value='20' style='width:30px;' method="GET"/>Minutes
+        </div>
     </form>
     
     <a href='#' onclick='timerComplete()'>Click here to show the overlay</a>

@@ -35,13 +35,37 @@ a:hover {
     cursor: pointer;
 }
 
-#clock, #button{
-    float:right;
+#button{
+    position: absolute;
+    left: 66.667%;
+    top: 50%;
+    margin-left: -125px; margin-top: -50px;
 }
 
-#clock {
-    margin-bottom: 40px;
+#setTime{
+    position: fixed;
+    margin-left: -64.5em; margin-top: 1em;
+    
 }
+
+@font-face {
+	font-family: 'digi';
+	src: url('http://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+}
+
+#clock{
+	font-family: 'digi';
+	font-size: 76%;
+        font-size: 4em;
+	
+	position: absolute;
+	left: 75%; top: 33.333%;
+	margin-left: -125px; margin-top: -50px;
+
+	text-align: center;
+	line-height: 100px;
+}
+
 
 #overlay {
      visibility: hidden;
