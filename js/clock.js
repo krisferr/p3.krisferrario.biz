@@ -1,28 +1,31 @@
-var clock = new (function() {
-    var $countdown,
+var button = new (function() {
+    var $clock,
         $form, // Form used to change the countdown time
         incrementTime = 70,
         currentTime = 120000,
         updateTimer = function() {
-            $countdown.html(formatTime(currentTime));
+            $clock.html(formatTime(currentTime));
             if (currentTime == 0) {
-                clock.Timer.stop();
+                button.Timer.stop();
                 timerComplete();
-                clock.resetCountdown();
+                button.resetCountdown();
                 return;
             }
             currentTime -= incrementTime / 10;
             if (currentTime < 0) currentTime = 0;
         },
-        timerComplete = function() {
-            alert('Times Up');
+        timerComplete = function() {  
+            message = document.getElementById("overlay");
+            message.style.visibility = (message.style.visibility == "visible") ? "hidden" : "visible";
+            //alert('Times Up');
         },
+        
         init = function() {
-            $countdown = $('#countdown');
-            clock.Timer = $.timer(updateTimer, incrementTime, true);
-            $form = $('#clock');
+            $clock = $('#clock');
+            button.Timer = $.timer(updateTimer, incrementTime, true);
+            $form = $('#button');
             $form.bind('submit', function() {
-                clock.resetCountdown();
+                button.resetCountdown();
                 return false;
             });
         };
@@ -31,6 +34,7 @@ var clock = new (function() {
         if (newTime > 0) {currentTime = newTime;}
         this.Timer.stop().once();
     };
+    
     $(init);
 });
 
