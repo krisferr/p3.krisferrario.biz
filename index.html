@@ -10,14 +10,14 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.timer.js"></script>
+    <script type="text/javascript" src="js/jquery.timer.js"></script>
     <script type="text/javascript" src="js/clock.js"></script>
     <script type="text/javascript" src="js/features.js"></script>
 </head> 
 <body>
     <h1>Pomodoro: a jQuery Timer</h1>
 
-    <div id="features">
+    <div class="features">
         
         
         <!-- Background picker -->
@@ -58,12 +58,17 @@
         </div>
     </form>
     
-    <a href='#' onclick='timerComplete()'>Click here to show the overlay</a>
+    <div class="counter">
+        <h2>The Number of Pomos:</h2>
+        
+    </div>
+    
+    <!--<input type='button' id="show" value='Show me' />-->
     
     <div id="overlay">
          <div>
-            <input type='button' value='Ok' onclick='timerComplete();' />
-             <p>Click here to [<a href='#' onclick='timerComplete()'>close</a>]</p>
+            <p>You deserve a break!</p>
+            <input type='button' id="hide" value='Ok' />
         </div>
     </div>
     
