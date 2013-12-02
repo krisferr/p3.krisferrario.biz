@@ -3,7 +3,7 @@
 }*/
 
 body {
-    font-family: Arial;
+    font-family: calibri;
     font-size: 12px;
     height:100%;
     margin:0;
@@ -35,6 +35,10 @@ a:hover {
     cursor: pointer;
 }
 
+.features{
+    float:left;
+}
+
 #button{
     position: absolute;
     left: 66.667%;
@@ -64,6 +68,11 @@ a:hover {
 
 	text-align: center;
 	line-height: 100px;
+}
+
+.counter{
+    position: absolute;
+    top: 70%;
 }
 
 
