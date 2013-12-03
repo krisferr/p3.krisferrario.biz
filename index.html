@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <head> 
-    <meta charset=utf-8" />
-    <meta name="author" content="Kris Ferrario" />
+
     <title>Pomodoro: a jQuery Timer</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -13,7 +12,8 @@
     <script type="text/javascript" src="js/jquery.timer.js"></script>
     <script type="text/javascript" src="js/clock.js"></script>
     <script type="text/javascript" src="js/features.js"></script>
-</head> 
+</head>
+
 <body>
     <h1>Pomodoro: a jQuery Timer</h1>
 
@@ -22,31 +22,24 @@
         
         <!-- Background picker -->
 	<h2>Pick a Kitchen Counter</h2>
-        <input type='radio' name='kitchen' id='white_counter'checked>
-	<label for 'white_counter'>White Counter</label></br>
-			
-	<input type='radio' name='kitchen' id='steel_counter'>
-	<label for 'steel_counter'>Steel Counter</label></br>				
-								
+        <div class='kitchen' id='white_counter'></div>
+	<div class='kitchen' id='steel_counter'></div>
+        <div class='kitchen' id='white_marble_counter'></div>
+        <div class='kitchen' id='brown_counter'></div>
+        <div class='kitchen' id='brown_marble_counter'></div>
+        
+	</br></br>							
 	<!-- Time type -->
 	<h2>Pick a Produce Timer</h2>
-	<input type='radio' name='produce' id='tomato'checked>
-        <label for 'tomato'>Tomoato</label></br>
-	
-        <input type='radio' name='produce' id='red_apple'>
-        <label for 'red_apple'>Red Apple</label></br>
-        
-        <input type='radio' name='produce' id='green_apple'>
-        <label for 'green_apple'>Green Apple</label></br>
-         
-	<input type='radio' name='produce' id='oranges'>
-        <label for 'orange'>Orange</label></br>
-        
-	<input type='radio' name='produce'id='onion'>
-        <label for 'onion'>Onion</label></br>
+        <div class='produce' id='tomato'></div>
+	<div class='produce' id='red_apple'></div>
+        <div class='produce' id='green_apple'></div>
+        <div class='produce' id='orange'></div>
+        <div class='produce' id='onion'></div>
         
     </div>
     
+    <div id="clock-type"></div>
     
     <span id="clock">20:00:00</span>
     <form id="button">
@@ -57,6 +50,8 @@
             <input type='text' name='startTime' maxlength='2' value='20' style='width:30px;' method="GET"/>Minutes
         </div>
     </form>
+    
+    
     
     <div class="counter">
         <h2>The Number of Pomos:</h2>
