@@ -1,21 +1,23 @@
-//$('.textures').click(function(){
-    
-    //var texture_that_was_clicked = $(this).css('background-image');
-    
-    //$('#canvas').css('background-image', texture_that_was_clicked);
-    
-//});
-
-
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("#overlay").hide();
-  });
-  $("#show").click(function(){
-    $("#overlay").show();
-  });
+//User can select background image
+$('.kitchen').click(function(){
+    var kitchen_clicked = $(this).css('background-image');
+    $('body').css('background-image', kitchen_clicked);
 });
 
 
+//User can select the type of clock from produce list
+$('.produce').click(function(){
+    var produce_clicked = $(this).css('background-image');
+    $('#clock-type').css('background-image', produce_clicked);
+});
 
-//object.style.backgroundImage="url(stars.gif)"
+
+//Allows for end message (overlay) be be hidden when the user hits the "Ok" button
+$(document).ready(function(){ 
+  $("#hide").click(function(){ 
+    $("#overlay").hide();  
+  });
+  $("#show").click(function(){  
+    $("#overlay").show(); 
+  });
+});
