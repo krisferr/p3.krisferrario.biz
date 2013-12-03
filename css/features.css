@@ -1,0 +1,60 @@
+.features {
+    display: block;
+}
+
+.kitchen, .produce{
+    border:1px solid #eee;
+    float:left;
+    margin-right:5px;
+    cursor:pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kitchen{
+    width:80px; height:35px;
+}
+
+#white_counter{
+    background-image: url('../images/white_kitchen_counter.jpg');
+}
+
+#steel_counter{
+    background-image: url('../images/stainless_steel_kitchen_counter.jpg');
+}
+
+#white_marble_counter{
+    background-image: url('../images/white_marble_kitchen_counter.jpg');
+}
+
+#brown_counter{
+    background-image: url('../images/brown_kitchen_counter.jpg');
+}
+
+#brown_marble_counter{
+    background-image: url('../images/brown_marble_kitchen_counter.jpg');
+}
+
+.produce{
+    width:50px; height:50px;
+}
+
+#tomato{
+    background-image: url('../images/tomato.png');
+}
+
+#red_apple{
+    background-image: url('../images/redapple.jpg');
+}
+
+#green_apple{
+    background-image: url('../images/greenapple.jpg');
+}
+
+#orange{
+    background-image: url('../images/orange.jpg');
+}
+
+#onion{
+    background-image: url('../images/onion.jpg');
+}
