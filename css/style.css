@@ -12,6 +12,9 @@ body {
     padding:10px;
     padding-bottom:70px;   /* Height of the footer */
     text-align: left;
+    background-image: url('../images/stainless_steel_kitchen_counter.jpg');
+    background-size:120em 70em;
+    background-repeat:no-repeat;
 }
 
 input[type=button] {
@@ -35,8 +38,15 @@ a:hover {
     cursor: pointer;
 }
 
-.features{
-    float:left;
+
+
+.clock-type{
+    
+    width:500px;
+    height:500px;
+    position:relative;
+    left:50em;
+    
 }
 
 #button{
@@ -129,3 +139,4 @@ li{
 @media (min-width: 1000px) {
     /* some CSS for large resolution */
 }
+
