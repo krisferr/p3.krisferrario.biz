@@ -38,7 +38,19 @@ a:hover {
     cursor: pointer;
 }
 
+#accordion {
+    width: 37em; height: 8em;
+}
 
+#accordion a {
+    color: #000;
+    text-decoration: none;
+}
+
+#accordion a:hover{
+    color: #8D671E;
+    cursor: pointer;
+}
 
 .clock-type{
     
