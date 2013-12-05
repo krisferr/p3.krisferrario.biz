@@ -3,87 +3,40 @@
 <head> 
 
     <title>Pomodoro: a jQuery Timer</title>
-    
-    <link rel="icon" type="image/vnd.microsoft.icon" href="http://p3.krisferrario.biz/tomato.ico" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/features.css" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/ui/jquery.ui.core.js"></script>
-    <script src="js/ui/jquery.ui.widget.js"></script>
-    <script src="js/ui/jquery.ui.accordion.js"></script>
-    <script src="js/jquery.timer.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/features.js"></script>
-    
-    <script type="text/javascript">
-    $(document).ready(function() {
-                $('#accordion').accordion();
-        })
-   </script>
-
-    
-    
+    <script type="text/javascript" src="js/jquery.timer.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/features.js"></script>
 </head>
 
 <body>
     <h1>Pomodoro: a jQuery Timer</h1>
 
-    <div id="accordion">
+    <div class="features">
+        
         
         <!-- Background picker -->
-	<h2><a href="#">Select your Venue</a></h2>
-        <div><p>
+	<h2>Pick a Kitchen Counter</h2>
         <div class='kitchen' id='white_counter'></div>
 	<div class='kitchen' id='steel_counter'></div>
         <div class='kitchen' id='white_marble_counter'></div>
         <div class='kitchen' id='brown_counter'></div>
         <div class='kitchen' id='brown_marble_counter'></div>
-        </p></div>
-								
-	<!-- Clock type -->
-	<h2><a href="#">Pick some Produce (your Timer)</a></h2>
-        <div><p>
+        
+	</br></br>							
+	<!-- Time type -->
+	<h2>Pick a Produce Timer</h2>
         <div class='produce' id='tomato'></div>
 	<div class='produce' id='red_apple'></div>
         <div class='produce' id='green_apple'></div>
         <div class='produce' id='orange'></div>
         <div class='produce' id='onion'></div>
-        </p></div>
-        							
-	<!-- Alarm sound -->
-	<h2><a href="#">Arm your Alarm</a></h2>
-        <div><p>
-        <input type='radio' name='alarm' id='alarm_clock_bell_ringing' checked>
-	<label for 'alarm_clock_bell_ringing'>Bell Ringing</label></br>
-			
-        <input type='radio' name='alarm' id='cuckoo_clock_striking_2_o_clock'>
-	<label for 'cuckoo_clock_striking_2_o_clock'>Cuckoo Clock</label></br>
         
-        <input type='radio' name='alarm' id='grandfather_clock_striking_half_hour'>
-	<label for 'grandfather_clock_striking_half_hour'>Grandfather Clock</label></br>
-        
-        <input type='radio' name='alarm' id='12_clock_chimes'>
-	<label for '12_clock_chimes'>12 Chimes</label></br>
-        </p></div>
-        							
-	<!-- Ticker sound -->
-	<h2><a href="#">Tamper with Tic-Toc</a></h2>
-        <div><p>
-        <input type='radio' name='tic-toc' id='clock_tick_001'>
-	<label for 'clock_tick_001'>Clock Tick 1</label></br>
-        
-        <input type='radio' name='tic-toc' id='clock_tick_002'>
-	<label for 'clock_tick_002'>Clock Tick 2</label></br>
-			
-        <input type='radio' name='tic-toc' id='electric_clock_ticking'>
-	<label for 'electric_clock_ticking'>Electic Clock</label></br>
-        
-        <input type='radio' name='tic-toc' id='none' checked>
-	<label for 'none'>None</label></br>
-        </p></div>
     </div>
     
     <div id="clock-type"></div>
