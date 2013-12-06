@@ -1,8 +1,5 @@
-/* {
-  border: none;
-}*/
-
 body {
+    color: #FFF;
     font-family: calibri;
     font-size: 12px;
     height:100%;
@@ -12,25 +9,13 @@ body {
     padding:10px;
     padding-bottom:70px;   /* Height of the footer */
     text-align: left;
-    background-image: url('../images/stainless_steel_kitchen_counter.jpg');
+    background-image: url('../images/white_kitchen_counter.jpg');
     background-size:120em 70em;
     background-repeat:no-repeat;
 }
 
-input[type=button] {
-    padding: 4px 10px;
-    margin: 5px 0 0;
-    font-size: 14px;
-    width: 200px;
-    color: #3a3a3a;
-}
-input[type=button]:hover {
-    cursor: pointer;
-    color: #000;
-}
-
 a {
-    color: #444;
+    color: #FFF;
     text-decoration: underline;
 }
 a:hover {
@@ -38,39 +23,52 @@ a:hover {
     cursor: pointer;
 }
 
-#accordion {
+#menu {
+    display: block;
     width: 37em; height: 8em;
 }
 
-#accordion a {
-    color: #000;
+#menu a {
+    color: #FFF;
     text-decoration: none;
 }
 
-#accordion a:hover{
+#menu a:hover{
     color: #8D671E;
     cursor: pointer;
 }
 
-.clock-type{
-    
+#clock-type{
     width:500px;
     height:500px;
     position:relative;
-    left:50em;
-    
+    left:62em;
+    background-image: url('../images/greenapple.png');
 }
 
 #button{
     position: absolute;
-    left: 66.667%;
-    top: 50%;
-    margin-left: -125px; margin-top: -50px;
+    left: 66.667%; top: 72%;
+    margin-left: -50px; margin-top: -50px;
+    padding:5px;
+}
+
+input[type=button] {
+    padding: 4px 10px;
+    margin: 5px 0 0;
+    font-size: 14px;
+    width: 100px;
+    color: #3a3a3a;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+    color: #000;
 }
 
 #setTime{
     position: fixed;
-    margin-left: -64.5em; margin-top: 1em;
+    margin-left: -70em; margin-top: -10em;
     
 }
 
@@ -85,7 +83,7 @@ a:hover {
         font-size: 4em;
 	
 	position: absolute;
-	left: 75%; top: 33.333%;
+	left: 75%; top: 60%;
 	margin-left: -125px; margin-top: -50px;
 
 	text-align: center;
