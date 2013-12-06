@@ -17,7 +17,7 @@ var button = new (function() {
         timerComplete = function() {  
             message = document.getElementById("overlay");
             message.style.visibility = (message.style.visibility == "visible") ? "hidden" : "visible";
-            //alert('Times Up');
+            alarm();
         },
         
         init = function() {
