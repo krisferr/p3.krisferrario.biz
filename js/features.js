@@ -11,7 +11,6 @@ $('.produce').click(function(){
     $('#clock-type').css('background-image', produce_clicked);
 });
 
-
 //Allows for end message (overlay) be be hidden when the user hits the "Ok" button
 $(document).ready(function(){ 
   $("#hide").click(function(){ 
