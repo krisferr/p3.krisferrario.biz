@@ -15,74 +15,73 @@
     <script src="js/ui/jquery.ui.widget.js"></script>
     <script src="js/ui/jquery.ui.accordion.js"></script>
     <script src="js/jquery.timer.js"></script>
-    <script src="js/clock.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/clock.js"></script>
     
     <script type="text/javascript">
     $(document).ready(function() {
-                $('#accordion').accordion();
+                $('#menu').accordion();
         })
    </script>
-
-    
     
 </head>
 
 <body>
+    
     <h1>Pomodoro: a jQuery Timer</h1>
-
-    <div id="accordion">
+    
+    <div id="menu">
         
         <!-- Background picker -->
-	<h2><a href="#">Select your Venue</a></h2>
+        <h2><a href="#">Select your Venue</a></h2>
         <div><p>
-        <div class='kitchen' id='white_counter'></div>
-	<div class='kitchen' id='steel_counter'></div>
-        <div class='kitchen' id='white_marble_counter'></div>
-        <div class='kitchen' id='brown_counter'></div>
-        <div class='kitchen' id='brown_marble_counter'></div>
+            <div class='kitchen' id='white_counter'></div>
+            <div class='kitchen' id='steel_counter'></div>
+            <div class='kitchen' id='white_marble_counter'></div>
+            <div class='kitchen' id='brown_counter'></div>
+            <div class='kitchen' id='brown_marble_counter'></div>
         </p></div>
-								
-	<!-- Clock type -->
-	<h2><a href="#">Pick some Produce (your Timer)</a></h2>
+                                                                    
+        <!-- Clock type -->
+        <h2><a href="#">Pick some Produce (your Timer)</a></h2>
         <div><p>
-        <div class='produce' id='tomato'></div>
-	<div class='produce' id='red_apple'></div>
-        <div class='produce' id='green_apple'></div>
-        <div class='produce' id='orange'></div>
-        <div class='produce' id='onion'></div>
+            <div class='produce' id='tomato'></div>
+            <div class='produce' id='red_apple'></div>
+            <div class='produce' id='green_apple'></div>
+            <div class='produce' id='orange'></div>
+            <div class='produce' id='onion'></div>
         </p></div>
-        							
-	<!-- Alarm sound -->
-	<h2><a href="#">Arm your Alarm</a></h2>
+                                                                    
+        <!-- Alarm sound -->
+        <h2><a href="#">Arm your Alarm</a></h2>
         <div><p>
-        <input type='radio' name='alarm' id='alarm_clock_bell_ringing' checked>
-	<label for 'alarm_clock_bell_ringing'>Bell Ringing</label></br>
-			
-        <input type='radio' name='alarm' id='cuckoo_clock_striking_2_o_clock'>
-	<label for 'cuckoo_clock_striking_2_o_clock'>Cuckoo Clock</label></br>
-        
-        <input type='radio' name='alarm' id='grandfather_clock_striking_half_hour'>
-	<label for 'grandfather_clock_striking_half_hour'>Grandfather Clock</label></br>
-        
-        <input type='radio' name='alarm' id='12_clock_chimes'>
-	<label for '12_clock_chimes'>12 Chimes</label></br>
+            <input type='radio' name='alarm' id='alarm_clock_bell_ringing' checked>
+            <label for 'alarm_clock_bell_ringing'>Bell Ringing</label></br>
+                            
+            <input type='radio' name='alarm' id='cuckoo_clock_striking_2_o_clock'>
+            <label for 'cuckoo_clock_striking_2_o_clock'>Cuckoo Clock</label></br>
+            
+            <input type='radio' name='alarm' id='grandfather_clock_striking_half_hour'>
+            <label for 'grandfather_clock_striking_half_hour'>Grandfather Clock</label></br>
+            
+            <input type='radio' name='alarm' id='12_clock_chimes'>
+            <label for '12_clock_chimes'>12 Chimes</label></br>
         </p></div>
-        							
-	<!-- Ticker sound -->
-	<h2><a href="#">Tamper with Tic-Toc</a></h2>
+                                                                    
+        <!-- Ticker sound -->
+        <h2><a href="#">Tamper with Tic-Toc</a></h2>
         <div><p>
-        <input type='radio' name='tic-toc' id='clock_tick_001'>
-	<label for 'clock_tick_001'>Clock Tick 1</label></br>
-        
-        <input type='radio' name='tic-toc' id='clock_tick_002'>
-	<label for 'clock_tick_002'>Clock Tick 2</label></br>
-			
-        <input type='radio' name='tic-toc' id='electric_clock_ticking'>
-	<label for 'electric_clock_ticking'>Electic Clock</label></br>
-        
-        <input type='radio' name='tic-toc' id='none' checked>
-	<label for 'none'>None</label></br>
+            <input type='radio' name='tic-toc' id='clock_tick_001'>
+            <label for 'clock_tick_001'>Clock Tick 1</label></br>
+            
+            <input type='radio' name='tic-toc' id='clock_tick_002'>
+            <label for 'clock_tick_002'>Clock Tick 2</label></br>
+                            
+            <input type='radio' name='tic-toc' id='electric_clock_ticking'>
+            <label for 'electric_clock_ticking'>Electic Clock</label></br>
+            
+            <input type='radio' name='tic-toc' id='none' checked>
+            <label for 'none'>None</label></br>
         </p></div>
     </div>
     
@@ -99,14 +98,6 @@
     </form>
     
     
-    
-    <div class="counter">
-        <h2>The Number of Pomos:</h2>
-        
-    </div>
-    
-    <!--<input type='button' id="show" value='Show me' />-->
-    
     <div id="overlay">
          <div>
             <p>You deserve a break!</p>
@@ -114,16 +105,16 @@
         </div>
     </div>
     
-<footer>
-<ul id="three">
-<li>Idea for this timer based on The Pomodoro Technique&reg; Learn more at <a href="http://pomodorotechnique.com" target="blank"> pomodorotechnique.com</a></li>
-<li>jQuery Timer Code developed by Jason Chavannes <a href="http://jchavannes.com/jquery-timer" target="_blank">jchavannes.com/jquery-timer</a></li>
-<li>Developed for <a href="http://dwa15.com/Home" target="_blank">CSCI-E 15</a> at Harvard Exension School</li>
-<li>For Academic Purposes Only</li>
-<li>Images used are from Public Domain</div></li>
-<li>Audio from <a href="http://www.freesfx.co.uk" target="_blank">freesfx.co.uk</a></li>
-
-
-</footer>
+    <footer>
+        <ul id="three">
+            <li>Idea for this timer based on The Pomodoro Technique&reg; Learn more at <a href="http://pomodorotechnique.com" target="blank"> pomodorotechnique.com</a></li>
+            <li>jQuery Timer Code developed by Jason Chavannes <a href="http://jchavannes.com/jquery-timer" target="_blank">jchavannes.com/jquery-timer</a></li>
+            <li>Developed for <a href="http://dwa15.com/Home" target="_blank">CSCI-E 15</a> at Harvard Exension School</li>
+            <li>For Academic Purposes Only</li>
+            <li>Images used are from Public Domain</div></li>
+            <li>Audio from <a href="http://www.freesfx.co.uk" target="_blank">freesfx.co.uk</a></li>
+        </ul>
+    </footer>
+    
 </body>
 </html>
