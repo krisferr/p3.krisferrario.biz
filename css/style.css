@@ -1,3 +1,7 @@
+/*-------------------------------------------------------------------------------------------------
+General
+-------------------------------------------------------------------------------------------------*/
+
 body {
     color: #FFF;
     font-family: calibri;
@@ -9,7 +13,7 @@ body {
     padding:10px;
     padding-bottom:70px;   /* Height of the footer */
     text-align: left;
-    background-image: url('../images/white_kitchen_counter.jpg');
+    background-image: url('../images/brown_kitchen_counter.jpg');
     background-size:120em 70em;
     background-repeat:no-repeat;
 }
@@ -23,6 +27,10 @@ a:hover {
     cursor: pointer;
 }
 
+
+/*-------------------------------------------------------------------------------------------------
+Menu
+-------------------------------------------------------------------------------------------------*/
 #menu {
     display: block;
     width: 37em; height: 8em;
@@ -38,12 +46,16 @@ a:hover {
     cursor: pointer;
 }
 
+/*-------------------------------------------------------------------------------------------------
+Clock
+-------------------------------------------------------------------------------------------------*/
+
 #clock-type{
     width:500px;
     height:500px;
     position:relative;
     left:62em;
-    background-image: url('../images/greenapple.png');
+    background-image: url('../images/tomato.png');
 }
 
 #button{
@@ -90,11 +102,9 @@ input[type=button]:hover {
 	line-height: 100px;
 }
 
-.counter{
-    position: absolute;
-    top: 70%;
-}
-
+/*-------------------------------------------------------------------------------------------------
+Overlay/ End Message
+-------------------------------------------------------------------------------------------------*/
 
 #overlay {
      visibility: hidden;
@@ -118,6 +128,10 @@ input[type=button]:hover {
      
 }
 
+/*-------------------------------------------------------------------------------------------------
+Footer
+-------------------------------------------------------------------------------------------------*/
+
 footer {
    position:absolute;
    bottom:0;
@@ -139,14 +153,5 @@ li{
 
 #three li  {
     width:33.333%;
-}
-
-
-@media (max-width: 500px) {
-    /* some CSS for small resolution */
-}
-
-@media (min-width: 1000px) {
-    /* some CSS for large resolution */
 }
 
