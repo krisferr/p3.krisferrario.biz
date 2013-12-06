@@ -15,6 +15,7 @@ var button = new (function() {
             if (currentTime < 0) currentTime = 0;
         },
         timerComplete = function() {  
+            pause();
             message = document.getElementById("overlay");
             message.style.visibility = (message.style.visibility == "visible") ? "hidden" : "visible";
             alarm();
@@ -33,6 +34,7 @@ var button = new (function() {
         var newTime = parseInt($form.find('input[type=text]').val()) * 6000;
         if (newTime > 0) {currentTime = newTime;}
         this.Timer.stop().once();
+        pause();
     };
     
     $(init);

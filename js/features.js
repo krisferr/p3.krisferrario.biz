@@ -43,6 +43,8 @@ alarm = function(){
         
 };
 
+var tickToc= null;
+
 //User can select a tick-toc noise 
 $(document).ready(function(){
     
@@ -78,6 +80,10 @@ $(document).ready(function(){
     });
         
 });
+
+pause = function(){
+    tickToc.pause();
+};
 
 
 //Allows for end message (overlay) be be hidden when the user hits the "Ok" button
