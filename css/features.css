@@ -1,3 +1,7 @@
+/*-------------------------------------------------------------------------------------------------
+Venue/Background Image
+-------------------------------------------------------------------------------------------------*/
+
 .kitchen {
     width:80px; height:35px;
     border:1px solid #eee;
@@ -28,6 +32,10 @@
     background-image: url('../images/brown_marble_kitchen_counter.jpg');
 }
 
+/*-------------------------------------------------------------------------------------------------
+Produce/ Timer Image
+-------------------------------------------------------------------------------------------------*/
+
 .produce{
     width:50px; height:50px;
     border:1px solid #eee;
@@ -43,17 +51,17 @@
 }
 
 #red_apple{
-    background-image: url('../images/redapple.jpg');
+    background-image: url('../images/redapple.png');
 }
 
 #green_apple{
-    background-image: url('../images/greenapple.jpg');
+    background-image: url('../images/greenapple.png');
 }
 
 #orange{
-    background-image: url('../images/orange.jpg');
+    background-image: url('../images/orange.png');
 }
 
 #onion{
-    background-image: url('../images/onion.jpg');
+    background-image: url('../images/onion.png');
 }
